@@ -16,6 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+  function disconnected(){
+      alert("you are fucking offline");
+  }
+  
+
 var app = {
   // Application Constructor
   initialize: function () {
@@ -24,7 +30,13 @@ var app = {
       this.onDeviceReady.bind(this),
       false
     );
+    document.addEventListener(
+      "offline",
+      disconnected,
+      false
+      );
   },
+
 
   // deviceready Event Handler
   //

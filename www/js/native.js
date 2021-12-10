@@ -11,3 +11,8 @@ const openInAppBrowser = (link) => {
 const deviceReady = () => {
   window.addEventListener("batterystatus", onBatteryStatus, false);
 };
+
+// window.addEventListener("orientationchange", function(){
+//   console.log(screen.orientation.type); // e.g. portrait
+//   screen.orientation.lock('paysage');
+// });
