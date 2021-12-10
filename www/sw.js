@@ -93,6 +93,7 @@ const waitUntilInstallationPromise = () =>
       cache.addAll(CACHED_FILES).then(resolve);
     });
   });
+  
 
 const installSW = (event) => {
   event.waitUntil(waitUntilInstallationPromise());
